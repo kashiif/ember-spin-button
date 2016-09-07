@@ -4,7 +4,7 @@
 module.exports = {
   name: 'ember-spin-button',
 
-  included(app) {
+  included: function(app) {
     this._super.included && this._super.included.apply(this, arguments);
     this.import(app.bowerDirectory + '/spin.js/spin.js');
     this.import('vendor/spinner.js', {
@@ -13,5 +13,5 @@ module.exports = {
       },
     });
 
-  },
+  }
 };
